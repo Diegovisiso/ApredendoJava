@@ -4,9 +4,10 @@ import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import com.example.aulaaprendendojavadozero.classes.Cliente;
+import com.example.aulaaprendendojavadozero.classes.ContaBancaria;
+import com.example.aulaaprendendojavadozero.classes.FuncionarioBanco;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +19,12 @@ public class MainActivity extends AppCompatActivity {
 
         FuncionarioBanco funcionario = new FuncionarioBanco();
         funcionario.calcularSalarioComDesconto();
+
+        ContaBancaria contabancaria = new ContaBancaria();
+        contabancaria.sacar();
+
+        Cliente cliente = new Cliente();
+        cliente.sacar();
 
     }
 }
